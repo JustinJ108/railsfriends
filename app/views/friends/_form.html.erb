@@ -40,6 +40,10 @@
     <%= form.label :user_id, id: :friend_user_id, style: "display: block", value: current_user.id, type: :hidden %>
   </div>  
 
+  <div>
+    <%= form.number_field :user_id, id: :friend_user_id, value: current_user.id, type: :hidden  %>
+  </div>
+
   <p>
   <div>
     <%= form.submit %>
